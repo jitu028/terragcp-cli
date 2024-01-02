@@ -49,55 +49,34 @@ please type prompt below
 press enter twice to send prompt
 just enter to quit
 [1]>>> {{
-hi, can you explain to me this code below
+generate terraform code to create a compute instance in gcp
 
-package main
-
-func main() {
-  fmt.Println("hello world")
-}
-
-}}
-      The code below is a simple "Hello, world!" program written in Go. It
-      prints the string "hello world" to the standard output.
-
-      ┃ package main
-      ┃ 
-      ┃ import "fmt"
-      ┃ 
-      ┃ func main() {
-      ┃     fmt.Println("hello world")
+      ┃ resource "google_compute_instance" "webserver" {
+      ┃   name         = "webserver-1"
+      ┃   machine_type = "n1-standard-1"
+      ┃   zone         = "us-central1-a"
+      ┃   disk {
+      ┃     source_image = "debian-cloud/debian-11"
+      ┃     type         = "PERSISTENT"
+      ┃     auto_delete  = true
+      ┃   }
+      ┃   network_interface {
+      ┃     name = "global/networks/default"
+      ┃   }
       ┃ }
 
-      Here's a breakdown of the code:
-      • package main: This line declares the package name for the program. The
-        main package is the entry point for the program.
-      • import "fmt": This line imports the fmt package, which provides
-        functions for formatted I/O.
-      • func main() { ... }: This is the main function of the program. It's the
-        entry point for the program, and it's where the program execution
-        begins.
-      • fmt.Println("hello world"): This line prints the string "hello world" to
-        the standard output (usually the console or terminal window where the
-        program is running).
-
-      When you run the program, you should see the output:
-
-      ┃ hello world
+      This code creates a new Compute Engine instance named webserver-1 in the
+      us-central1-a zone, with a machine type of n1-standard-1. The instance
+      includes a single disk with the Debian 11 image, and is attached to the
+      default network.
 
 [2]>>> 
-history saved to history-0d9d6887-ce12-4e89-824d-91b87b1a636f.txt
+history saved to history-45a256b7-794b-47a5-8d02-593d3756ecf0.txt
 ```
 
 The prompt detects a blank line as termination, therefore, in order to send a prompt
 that has blank lines in it, start the prompt with double curly braces `{{` and end
 with `}}` as shown below.
-
-
-
-
-
-
 
 ## Analyze Terraform Configurations
 Analyze and optimize your Terraform configurations with AI-powered insights and suggestions.
@@ -140,5 +119,6 @@ displaying content that could be harmful. Change it at your own risk, for exampl
 terragcp-cli chat --allow-harm-probability=medium --auto-save
 ```
 
+## Parameter Tuning
 Model config params such as `--top-p`, `--top-k`, `--temperature`, `--candiate-count` and 
 `--max-output-tokens` can be supplied for fine tuning
