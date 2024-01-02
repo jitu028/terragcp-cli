@@ -22,15 +22,6 @@ const (
 )
 
 const (
-	FormatPng  = "image/png"
-	FormatJpeg = "image/jpeg"
-	FormatHeic = "image/heic"
-	FormatHeif = "image/heif"
-	FormatWebp = "image/webp"
-	FormatPdf  = "application/pdf"
-)
-
-const (
 	MaxBlobBufferSizeBytes = 4194304
 )
 
@@ -40,7 +31,6 @@ const (
 
 const (
 	ModelGeminiPro       = "models/gemini-pro"
-	ModelGeminiProVision = "models/gemini-pro-vision"
 	ModelEmbedding001    = "models/embedding-001"
 )
 
