@@ -48,7 +48,6 @@ func init() {
 		) {
 			return []string{
 					flags.ModelGeminiPro,
-					flags.ModelGeminiProVision,
 					flags.ModelEmbedding001,
 				},
 				cobra.ShellCompDirectiveDefault
