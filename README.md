@@ -23,7 +23,7 @@ installed on your system.
 go install github.com/jitu028/terragcp-cli@latest
 ```
 
-Alternatively you can directly use the executible file present in repo.
+**Alternatively you can directly use the executible file present in repo.**
 
 
 Get an API key from [Google AI studio](https://makersuite.google.com/app/apikey)
