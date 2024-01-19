@@ -30,9 +30,8 @@ const (
 )
 
 const (
-	ModelGeminiPro       = "models/gemini-pro"
-	ModelGeminiProVision = "models/gemini-pro-vision"
-	ModelEmbedding001    = "models/embedding-001"
+	ModelGeminiPro    = "models/gemini-pro"
+	ModelEmbedding001 = "models/embedding-001"
 )
 
 const (
