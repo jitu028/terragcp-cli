@@ -143,6 +143,7 @@ OuterLoop:
 		if len(lines) == 0 {
 			break OuterLoop
 		}
+		lines = append(lines, "Only respond with terraform GCP related content or find potential performance bottlenecks and suggest improvements which can be made to improve performance or Find Potential issues with the following code (if code provided) which would lead to crashes or incorrect results or Please do a Code review on shared Code (if given) or Perform the following checks at least, Typos, Logic errors, Performance Bottlenecks, Clarity of Names, Possible restructurings and refactorings, Error handling Code documentation through inline comments and xml comments")
 
 		select {
 		case <-ctx.Done():
