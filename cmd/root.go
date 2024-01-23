@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jitu028/terragcp-cli/pkg/flags"
+	"github.com/kubetrail/gini/pkg/flags"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
