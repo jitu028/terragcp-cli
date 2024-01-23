@@ -1,4 +1,4 @@
-module github.com/jitu028/terragcp-cli
+module github.com/jitu028/terragcp-cli-demo
 
 go 1.21.6
 
@@ -7,6 +7,7 @@ require (
 	github.com/gomarkdown/markdown v0.0.0-20231222211730-1d6d20845b47
 	github.com/google/generative-ai-go v0.5.0
 	github.com/google/uuid v1.5.0
+	github.com/jitu028/terragcp-cli v1.0.0
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/viper v1.18.2
 	google.golang.org/api v0.157.0
